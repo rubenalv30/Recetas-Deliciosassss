@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Crepas</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2F0E9;
+            color: #49423C;
+            text-align: center;
+        }
+        header {
+            background-color: #555044;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .sub-header {
+            background-color: #857B6E;
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #857B6E;
+            margin-bottom: 20px;
+        }
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.3);
+            border-radius: 8px;
+        }
+        ol {
+            text-align: left;
+            padding-left: 20px;
+        }
+        ol li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #555044;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #49423C;
+        }
+        footer {
+            background-color: #555044;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media print {
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Receta de Manuel</header>
+    <div class="sub-header">Receta de Crepas</div>
+    <div class="container">
+        <h2>Ingredientes (Porciones: 6-8 crepas)</h2>
+        <ul class="ingredientes">
+            <li><input type="checkbox"> 1 Taza de harina de trigo</li>
+            <li><input type="checkbox"> 1 1/4 Taza de leche</li>
+            <li><input type="checkbox"> 2 Huevos</li>
+            <li><input type="checkbox"> 2 Cucharadas de mantequilla derretida</li>
+            <li><input type="checkbox"> 1 Cucharadita de azúcar</li>
+            <li><input type="checkbox"> 1/2 Cucharadita de sal</li>
+            <li><input type="checkbox"> 1/4 Cucharadita de esencia de vainilla</li>
+        </ul>
+        <h2>Preparación</h2>
+        <ol>
+            <li>En un tazón grande, mezcla la harina, el azúcar, la sal y la esencia de vainilla.</li>
+            <li>Añade los huevos y bate bien hasta integrar todo.</li>
+            <li>Agrega la leche poco a poco mientras sigues batiendo para evitar grumos.</li>
+            <li>Por último, añade la mantequilla derretida y mezcla bien.</li>
+            <li>Deja reposar la mezcla por 30 minutos en el refrigerador.</li>
+            <li>Calienta una sartén antiadherente a fuego medio y agrega un poco de mantequilla.</li>
+            <li>Vierte un poco de la mezcla en la sartén caliente, inclinándola para que se cubra toda la superficie de manera uniforme.</li>
+            <li>Cocina durante 1-2 minutos o hasta que los bordes de la crepa se despeguen fácilmente. Da la vuelta con una espátula y cocina por 1 minuto más.</li>
+            <li>Repite el proceso hasta que se acabe la mezcla. Sirve las crepas con tu relleno favorito, como frutas, crema o chocolate.</li>
+        </ol>
+        
+        <button class="boton" onclick="window.print()">Imprimir Receta</button>
+    </div>
+
+    <div class="video-container">
+        <h2>Video de la Receta</h2>
+        <iframe src="https://www.youtube.com/embed/H_k_QutlKoE" title="Receta de Crepas" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>&copy; 2025 Recetas Fáciles y Deliciosas</footer>
+</body>
+</html>

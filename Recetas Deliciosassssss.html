@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Fáciles y Deliciosas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F6F4EE;
+            color: #49423C;
+            text-align: center;
+        }
+        header {
+            background-color: #555044;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #857B6E;
+        }
+        nav ul li {
+            margin: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #F2F0E9;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .banner-wrapper {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 60%; /* Reducido en un 40% */
+        }
+        .banner-content {
+            background-color: #FFFFFF;
+            color: #49423C;
+            padding: 40px;
+            width: 30%;
+            text-align: left;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .banner-content h2 {
+            margin-top: 0;
+        }
+        .banner-content p {
+            margin-bottom: 0;
+        }
+        .banner-image {
+            width: 70%;
+        }
+        .banner-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .recetas-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .receta {
+            display: flex;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            align-items: center;
+        }
+        .receta img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .receta-content {
+            flex: 1;
+        }
+        .receta h3 {
+            color: #555044;
+        }
+        .btn {
+            background-color: #857B6E;
+            color: white;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background-color: #6D6557;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #555044;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>Recetas Fáciles y Deliciosas</header>
+    <nav>
+        <ul>
+            <li><a href="html/Receta de Andyy.html">Cinnamon Roll</a></li>
+            <li><a href="html/Receta de Manuel.html">Chocoflan</a></li>
+            <li><a href="html/Receta de Ruben.html">Carlota de Durazno</a></li>
+            <li><a href="html/Receta de Cielo.html">Brownies</a></li>
+            <li><a href="html/Receta de Maria.html">Churros</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner-wrapper">
+        <div class="banner-content">
+             <h2>Bienvenidos a un mundo de sabores</h2>
+                <p>En esta página encontrarás una colección de recetas pensadas para sorprender a tu paladar y consentir a tus seres queridos. Desde postres clásicos hasta creaciones innovadoras, cada receta está explicada paso a paso para que cocines sin complicaciones.</p>
+            <a href="#"><button class="btn">Ver Recetas</button></a>
+        </div>
+        <div class="banner-image">
+            <img src="Images/Presentacion.jpg" alt="Postre Delicioso">
+        </div>
+    </div>
+
+    <section class="recetas-container">
+        <div class="receta" id="cinnamonRoll">
+            <img src="Images/RoldeCanela.jpg" alt="Cinnamon Roll">
+            <div class="receta-content">
+                <h3>Cinnamon Roll</h3>
+                <p>Deliciosos rollos de canela con una masa suave y esponjosa, rellenos de azúcar moreno y canela. Se cubren con un glaseado cremoso de queso crema que los hace irresistibles, perfectos para acompañar un café o té.</p>
+                <a href="html/Receta de Andyy.html"><button class="btn">Ver más</button></a>
+            </div>
+         </div>
+        <div class="receta" id="Chocoflan">
+            <img src="Images/Chocoflan.jpg" alt="Chocoflan">
+            <div class="receta-content">
+                <h3>Chocoflan</h3>
+                <p>Un postre que combina un flan cremoso y un pastel de chocolate esponjoso, horneados juntos. El flan suave se funde en la boca, mientras que el pastel de chocolate agrega una textura rica y húmeda.</p>
+                <a href="html/Receta de Manuel.html"><button class="btn">Ver más</button></a>
+            </div>
+        </div>
+        <div class="receta" id="CarlotaDeDurazno">
+            <img src="Images/Carlota.jpg" alt="Carlota de Durazno">
+            <div class="receta-content">
+                <h3>Carlota de Durazno</h3>
+                <p>Un postre fresco y cremoso, hecho con capas de galleta María y una mezcla de crema con duraznos en almíbar. La combinación de los sabores y texturas crea un equilibrio perfecto de dulzura y suavidad.</p>
+                <a href="html/Receta de Ruben.html"><button class="btn">Ver más</button></a>
+            </div>
+        </div>
+        <div class="receta" id="Brownies">
+            <img src="Images/Brownies.jpg" alt="Brownies">
+            <div class="receta-content">
+                <h3>Brownies</h3>
+                <p>Brownies densos y húmedos, con trozos de chocolate que se derriten en cada bocado. La capa superior ligeramente crujiente y el interior suave los convierten en un postre clásico que nunca pasa de moda.</p>
+                <a href="html/Receta de Cielo.html"><button class="btn">Ver más</button></a>
+            </div>
+        </div>
+        <div class="receta" id="Churros">
+            <img src="Images/Churros.jpg" alt="Churros">
+            <div class="receta-content">
+                <h3>Churros</h3>
+                <p>Churros recién fritos, crujientes por fuera y suaves por dentro, espolvoreados con azúcar y canela. Perfectos para disfrutar con una taza de chocolate caliente o un buen café.</p>
+                <a href="html/Receta de Maria.html"><button class="btn">Ver más</button></a>
+ 	    </div>
+        </div>
+<div class="receta" id="CheesecakeDeMoraAzul">
+    <img src="Images/Cheesecake de mora azul.jpg" alt="Cheesecake de Mora Azul">
+    <div class="receta-content">
+        <h3>Cheesecake de Mora Azul</h3>
+        <p>Un delicioso cheesecake con una base crujiente y un suave relleno de queso crema, cubierto con una capa de mermelada de mora azul que aporta un toque dulce y ácido perfecto.</p>
+        <a href="html/Cheesecake de mora azul.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+
+<div class="receta" id="Crepas">
+    <img src="Images/Crepas.jpg" alt="Crepas">
+    <div class="receta-content">
+        <h3>Crepas</h3>
+        <p>Delgadas y suaves crepas que pueden rellenarse con una gran variedad de ingredientes, desde frutas frescas y crema batida hasta chocolate derretido o queso y jamón.</p>
+        <a href="html/Crepas.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+
+<div class="receta" id="Cupcakes">
+    <img src="Images/Cupcakes.jpg" alt="Cupcakes">
+    <div class="receta-content">
+        <h3>Cupcakes</h3>
+        <p>Pequeños y esponjosos pastelitos decorados con crema y toppings variados, ideales para cualquier ocasión especial.</p>
+        <a href="html/Cupcakes.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+
+<div class="receta" id="GalletasDeAvena">
+    <img src="Images/Galletas de avena.jpg" alt="Galletas de Avena">
+    <div class="receta-content">
+        <h3>Galletas de Avena</h3>
+        <p>Galletas saludables y deliciosas hechas con avena, perfectas para acompañar con un café o té.</p>
+        <a href="html/Galletas de avena.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+
+<div class="receta" id="Pastisetas">
+    <img src="Images/Pastisetas.jpg" alt="Pastisetas">
+    <div class="receta-content">
+        <h3>Pastisetas</h3>
+        <p>Galletas de mantequilla suaves y crujientes, con un sabor delicado que se derrite en la boca.</p>
+        <a href="html/Pastisetas.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+
+<div class="receta" id="PayDeCoco">
+    <img src="Images/Pay de Coco.jpg" alt="Pay de Coco">
+    <div class="receta-content">
+        <h3>Pay de Coco</h3>
+        <p>Un postre tropical con una base crujiente y un relleno cremoso con el sabor inconfundible del coco.</p>
+        <a href="html/Pay de coco.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+
+<div class="receta" id="TartaDeManzana">
+    <img src="Images/Tarta de Manzana.jpg" alt="Tarta de Manzana">
+    <div class="receta-content">
+        <h3>Tarta de Manzana</h3>
+        <p>Un clásico postre casero con una base crujiente y un relleno de manzana especiada con canela.</p>
+        <a href="html/Tarta de Manzana.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+
+<div class="receta" id="Tiramisu">
+    <img src="Images/Tiramisu.jpg" alt="Tiramisú">
+    <div class="receta-content">
+        <h3>Tiramisú</h3>
+        <p>Un elegante postre italiano elaborado con capas de bizcocho empapado en café, crema de mascarpone y cacao en polvo.</p>
+        <a href="html/Tiramisu.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+<div class="receta" id="Macarons">
+    <img src="Images/Macarons.jpg" alt="Macarons">
+    <div class="receta-content">
+        <h3>Macarons</h3>
+        <p>Delicados y coloridos macarons franceses, hechos con almendra molida y rellenos con una variedad de cremas y mermeladas. Crujientes por fuera y suaves por dentro, son un bocado elegante y delicioso.</p>
+        <a href="html/Macarons.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+<div class="receta" id="DonasDeAzucar">
+    <img src="Images/Donas.jpg" alt="Donas de Azúcar">
+    <div class="receta-content">
+        <h3>Donas de Azúcar</h3>
+        <p>Donas caseras esponjosas, fritas a la perfección y cubiertas con una generosa capa de azúcar. Suave por dentro y ligeramente crujiente por fuera, ideales para acompañar con un café o chocolate caliente.</p>
+        <a href="html/Donas de azucar.html"><button class="btn">Ver más</button></a>
+    </div>
+</div>
+    </section>
+
+    <footer>&copy; 2025 Recetas Fáciles y Deliciosas</footer>
+</body>
+</html>

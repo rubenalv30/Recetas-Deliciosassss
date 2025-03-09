@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Rubén</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2F0E9;
+            color: #49423C;
+            text-align: center;
+        }
+        header {
+            background-color: #555044;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .sub-header {
+            background-color: #857B6E;
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #857B6E;
+            margin-bottom: 20px;
+        }
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.3);
+            border-radius: 8px;
+        }
+        ol {
+            text-align: left;
+            padding-left: 20px;
+        }
+        ol li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #555044;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #49423C;
+        }
+        footer {
+            background-color: #555044;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+       
+        @media print {
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Receta de Rubén</header>
+    <div class="sub-header">Receta de Carlota de Durazno</div>
+    <div class="container">
+        <h2>Ingredientes (Porciones: 10)</h2>
+        <ul class="ingredientes">
+            <li><input type="checkbox"> 1 Lata de Leche Condensada LA LECHERA</li>
+            <li><input type="checkbox"> 1 Lata de Leche Evaporada CARNATION CLAVEL</li>
+            <li><input type="checkbox"> 1 1/2 Paquetes de queso crema (190 g c/u)</li>
+            <li><input type="checkbox"> 35 Galletas marías</li>
+            <li><input type="checkbox"> 1 Lata de duraznos en almíbar fileteados (840 g)</li>
+            <li><input type="checkbox"> 1 Sobre de grenetina (7 g), hidratada en ½ taza de agua y disuelta a baño María</li>
+            <li><input type="checkbox"> Hojas de menta desinfectadas</li>
+        </ul>
+        <h2>Preparación</h2>
+        <ol>
+            <li>Licúa la leche condensada, leche evaporada, queso crema, grenetina y la mitad de los duraznos.</li>
+            <li>Coloca en un refractario una capa de galletas, una de la mezcla anterior y otra de duraznos, repite con el resto de los ingredientes.</li>
+            <li>Termina con una capa de duraznos y refrigera por 3 horas.</li>
+            <li>Decora con hojas de menta y sirve.</li>
+        </ol>
+        <button class="boton" onclick="window.print()">Imprimir Receta</button>
+    </div>
+
+   
+    <div class="video-container">
+        <h2>Video de la Receta</h2>
+        <iframe src="https://www.youtube.com/embed/ecBJHxAVXNI" title="Receta Carlota de Durazno" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>&copy; 2025 Recetas Fáciles y Deliciosas</footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Cheesecake de Mora Azul</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2F0E9;
+            color: #49423C;
+            text-align: center;
+        }
+        header {
+            background-color: #555044;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .sub-header {
+            background-color: #857B6E;
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #857B6E;
+            margin-bottom: 20px;
+        }
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.3);
+            border-radius: 8px;
+        }
+        ol {
+            text-align: left;
+            padding-left: 20px;
+        }
+        ol li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #555044;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #49423C;
+        }
+        footer {
+            background-color: #555044;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media print {
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Receta de Manuel</header>
+    <div class="sub-header">Receta de Cheesecake de Mora Azul</div>
+    <div class="container">
+        <h2>Ingredientes (Porciones: 8-10)</h2>
+        <ul class="ingredientes">
+            <li><input type="checkbox"> 1 1/2 Tazas de galletas Digestive trituradas</li>
+            <li><input type="checkbox"> 1/4 Taza de mantequilla derretida</li>
+            <li><input type="checkbox"> 600 g de queso crema</li>
+            <li><input type="checkbox"> 1 Taza de azúcar</li>
+            <li><input type="checkbox"> 3 Huevos</li>
+            <li><input type="checkbox"> 1 Taza de crema para batir</li>
+            <li><input type="checkbox"> 1 Cucharadita de esencia de vainilla</li>
+            <li><input type="checkbox"> 2 Tazas de moras azules frescas o congeladas</li>
+            <li><input type="checkbox"> 1/2 Taza de azúcar para las moras</li>
+            <li><input type="checkbox"> 1 Cucharada de maicena (opcional)</li>
+        </ul>
+        <h2>Preparación</h2>
+        <ol>
+            <li>Precalienta el horno a 180°C y coloca papel para hornear en un molde redondo.</li>
+            <li>Mezcla las galletas trituradas con la mantequilla derretida y coloca esta mezcla en el fondo del molde presionando para que quede compacta.</li>
+            <li>En un tazón grande, bate el queso crema con el azúcar hasta que quede suave.</li>
+            <li>Añade los huevos uno por uno, batiendo bien después de cada adición. Luego agrega la crema para batir y la esencia de vainilla, y mezcla hasta que quede suave y homogéneo.</li>
+            <li>Vierte la mezcla de queso crema sobre la base de galletas.</li>
+            <li>Hornea durante 50-60 minutos o hasta que el centro esté casi firme (puede moverse ligeramente).</li>
+            <li>Deja enfriar el cheesecake a temperatura ambiente y luego refrigéralo por lo menos 4 horas o toda la noche.</li>
+            <li>Mientras, en una sartén, mezcla las moras azules con 1/2 taza de azúcar y cocina a fuego lento hasta que las moras se deshagan y se forme un sirope espeso. Si deseas una textura más espesa, añade la maicena disuelta en un poco de agua.</li>
+            <li>Deja enfriar la salsa de moras y colócala encima del cheesecake antes de servir.</li>
+        </ol>
+        
+        <button class="boton" onclick="window.print()">Imprimir Receta</button>
+    </div>
+
+    <div class="video-container">
+        <h2>Video de la Receta</h2>
+        <iframe src="https://www.youtube.com/embed/zSPDEDDYels" title="Receta Cheesecake de Mora Azul" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>&copy; 2025 Recetas Fáciles y Deliciosas</footer>
+</body>
+</html>

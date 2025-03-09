@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de José María</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2F0E9;
+            color: #49423C;
+            text-align: center;
+        }
+        header {
+            background-color: #555044;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .sub-header {
+            background-color: #857B6E;
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #857B6E;
+            margin-bottom: 20px;
+        }
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.3);
+            border-radius: 8px;
+        }
+        ol {
+            text-align: left;
+            padding-left: 20px;
+        }
+        ol li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #555044;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #49423C;
+        }
+        footer {
+            background-color: #555044;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+       
+        @media print {
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Receta de José María</header>
+    <div class="sub-header">Receta de Churros</div>
+    <div class="container">
+        <h2>Ingredientes</h2>
+        <ul class="ingredientes">
+            <li><input type="checkbox"> 1 Taza de agua </li>
+            <li><input type="checkbox"> 2 Cucharadas de azúcar</li>
+            <li><input type="checkbox"> 1/2 Cucharadita de sal</li>
+            <li><input type="checkbox"> 2 Cucharadas de aceite vegetal (un poco más para freír)</li>
+            <li><input type="checkbox"> 1 Taza de harina de trigo</li>
+            <li><input type="checkbox"> 1 Huevo (opcional, para una masa más rica)</li>
+            <li><input type="checkbox"> Azúcar</li>
+            <li><input type="checkbox"> Canela en polvo</li>
+        </ul>
+        <h2>Preparación</h2>
+        <ol>
+            <li>En una cacerola, pon el agua, el azúcar, la sal y las dos cucharadas de aceite. Lleva a ebullición.</li>
+            <li>Una vez que hierva, retira del fuego y agrega la harina. Mezcla bien hasta que se forme una masa homogénea.</li>
+            <li>Si decides usar el huevo, déjalo enfriar un poco y luego agrégalo a la masa, mezclando hasta que esté completamente incorporado.</li>
+            <li>Coloca la masa en una manga pastelera con una boquilla en forma de estrella.</li>
+            <li>Calienta suficiente aceite en una sartén profunda a fuego medio-alto.</li>
+            <li>Presiona la manga pastelera para formar tiras de masa en el aceite caliente. Corta los churros del tamaño que prefieras.</li>
+            <li>Fría hasta que estén dorados y crujientes (aproximadamente 2-3 minutos por cada lado).</li>
+            <li>Retira los churros y colócalos sobre el papel absorbente para eliminar el exceso de aceite.</li>
+            <li>Mezcla azúcar y canela al gusto en un plato y reboza los churros calientes en esta mezcla.</li>
+            <li>Disfruta tus churros con chocolate caliente, dulce de leche o solo espolvoreados con más azúcar.</li>
+        </ol>
+        <p>¡Y listo! Ahora puedes disfrutar de unos deliciosos churros caseros.</p>
+        <button class="boton" onclick="window.print()">Imprimir Receta</button>
+    </div>
+
+    
+    <div class="video-container">
+        <h2>Video de la Receta</h2>
+        <iframe src="https://www.youtube.com/embed/oJMGeyRE62Y" title="Receta Churros" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>&copy; 2025 Recetas Fáciles y Deliciosas</footer>
+</body>
+</html>

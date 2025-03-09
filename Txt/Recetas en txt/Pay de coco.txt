@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Pay de Coco</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2F0E9;
+            color: #49423C;
+            text-align: center;
+        }
+        header {
+            background-color: #555044;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .sub-header {
+            background-color: #857B6E;
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #857B6E;
+            margin-bottom: 20px;
+        }
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.3);
+            border-radius: 8px;
+        }
+        ol {
+            text-align: left;
+            padding-left: 20px;
+        }
+        ol li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #555044;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #49423C;
+        }
+        footer {
+            background-color: #555044;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media print {
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Receta de Andyy :)</header>
+    <div class="sub-header">Receta de Pay de Coco</div>
+    <div class="container">
+        <h2>Ingredientes (Porciones: 8-10)</h2>
+        <ul class="ingredientes">
+            <li><input type="checkbox"> 1 paquete de galletas María (250 g)</li>
+            <li><input type="checkbox"> 1/2 taza de mantequilla derretida</li>
+            <li><input type="checkbox"> 1 lata de leche condensada (397 g)</li>
+            <li><input type="checkbox"> 1 lata de leche evaporada (370 g)</li>
+            <li><input type="checkbox"> 1 taza de coco rallado</li>
+            <li><input type="checkbox"> 2 cucharadas de maicena</li>
+            <li><input type="checkbox"> 3 yemas de huevo</li>
+            <li><input type="checkbox"> 1 cucharadita de esencia de vainilla</li>
+            <li><input type="checkbox"> 1 pizca de sal</li>
+        </ul>
+        <h2>Preparación</h2>
+        <ol>
+            <li>Para la base: Tritura las galletas María y mézclalas con la mantequilla derretida hasta formar una masa.</li>
+            <li>Presiona la mezcla de galletas en el fondo de un molde para pay y hornea durante 10 minutos a 180°C.</li>
+            <li>Para el relleno: En una olla, mezcla la leche condensada, leche evaporada, coco rallado, maicena, yemas de huevo, esencia de vainilla y una pizca de sal.</li>
+            <li>Cocina la mezcla a fuego medio, removiendo constantemente hasta que espese.</li>
+            <li>Vierte el relleno sobre la base de galletas ya horneada y refrigera durante al menos 4 horas o hasta que esté firme.</li>
+            <li>Decora con más coco rallado al gusto y sirve bien frío.</li>
+        </ol>
+        
+        <button class="boton" onclick="window.print()">Imprimir Receta</button>
+    </div>
+
+    <div class="video-container">
+        <h2>Video de la Receta</h2>
+        <iframe src="https://www.youtube.com/embed/Bgq3aTcfS04" title="Receta de Pay de Coco" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>&copy; 2025 Recetas Fáciles y Deliciosas</footer>
+</body>
+</html>

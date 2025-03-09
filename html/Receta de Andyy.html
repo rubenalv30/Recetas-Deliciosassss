@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Andyyy :)</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2F0E9;
+            color: #49423C;
+            text-align: center;
+        }
+        header {
+            background-color: #555044;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .sub-header {
+            background-color: #857B6E;
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #857B6E;
+            margin-bottom: 20px;
+        }
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.3);
+            border-radius: 8px;
+        }
+        ol {
+            text-align: left;
+            padding-left: 20px;
+        }
+        ol li {
+            background: #F2F0E9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #555044;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #49423C;
+        }
+        footer {
+            background-color: #555044;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+      
+        @media print {
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Receta de Andyyy :)</header>
+    <div class="sub-header">Receta de Cinnamon Rolls</div>
+    <div class="container">
+        <h2>Ingredientes (Porciones: 10-12)</h2>
+        <ul class="ingredientes">
+            <li><input type="checkbox"> 4 tazas de harina de trigo</li>
+            <li><input type="checkbox"> 1/3 taza de azúcar</li>
+            <li><input type="checkbox"> 2 1/4 cucharaditas de levadura seca</li>
+            <li><input type="checkbox"> 1 taza de leche tibia</li>
+            <li><input type="checkbox"> 1/4 taza de mantequilla derretida</li>
+            <li><input type="checkbox"> 1 cucharadita de sal</li>
+            <li><input type="checkbox"> 1 huevo</li>
+            <li><input type="checkbox"> 1/2 taza de mantequilla derretida (para el relleno)</li>
+            <li><input type="checkbox"> 1 taza de azúcar morena</li>
+            <li><input type="checkbox"> 2 cucharadas de canela</li>
+            <li><input type="checkbox"> 1 taza de azúcar glass (para el glaseado)</li>
+            <li><input type="checkbox"> 2 cucharadas de leche</li>
+            <li><input type="checkbox"> 1 cucharadita de esencia de vainilla</li>
+        </ul>
+        <h2>Preparación</h2>
+        <ol>
+            <li>Mezcla la leche tibia, azúcar y levadura. Deja reposar 10 minutos.</li>
+            <li>Agrega mantequilla derretida, sal, huevo y harina. Amasa hasta obtener una masa suave y deja reposar 1 hora.</li>
+            <li>Extiende la masa en un rectángulo y unta con mantequilla derretida.</li>
+            <li>Espolvorea azúcar morena y canela sobre la masa.</li>
+            <li>Enrolla la masa y córtala en 10-12 piezas. Colócalas en un molde engrasado.</li>
+            <li>Deja reposar 30 minutos y hornea a 180°C por 25 minutos.</li>
+            <li>Mezcla azúcar glass, leche y vainilla para hacer el glaseado.</li>
+            <li>Decora los rolls con el glaseado y sirve.</li>
+        </ol>
+        
+        <button class="boton" onclick="window.print()">Imprimir Receta</button>
+    </div>
+
+   
+    <div class="video-container">
+        <h2>Video de la Receta</h2>
+        <iframe src="https://www.youtube.com/embed/iqsidkJbG1I" title="Receta Cinnamon Rolls" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>&copy; 2025 Recetas Fáciles y Deliciosas</footer>
+</body>
+</html>
